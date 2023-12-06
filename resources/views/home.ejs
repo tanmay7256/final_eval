@@ -1,0 +1,22 @@
+<section>
+    <a href="/image">
+        <h1 class="mt-12 ml-16 text-3xl font-medium underline">Upload your file to check sentiment </h1>
+        <div class="h-80 outer mt-12 mx-auto rounded-3xl flex items-center justify-center">
+            <div class="h-64 inner rounded-3xl">
+                <div class="p-4"><img class="filter invert mx-auto w-1/4" src="/img/upload.png" alt="upload"></div>
+                <p class="text-center my-2 font-light text-3xl">Upload your audio file:- </p>
+                <form action="/postupload" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        <input type="file" class="form-control-file mx-auto flex h-7 items-center justify-evenly mb-1"
+                            name="audioFile">
+                        <button type="submit"
+                            class="bg-white mx-auto rounded-3xl flex w-1/4 h-7 items-center justify-evenly">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </a>
+    <div>
+        <span class="text-3xl font-medium underline">Your Output will be displayed here :-</span>
+    </div>
+</section>
